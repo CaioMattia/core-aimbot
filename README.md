@@ -1,6 +1,6 @@
-# yolo-aimbot
+# 🧠 YoloV8 AI Aimbot - Core Aimbot
 
-Projeto experimental que utiliza **YOLOv8** para detectar inimigos e mover o mouse suavemente em direção à cabeça do alvo. Este projeto serve como estudo de visão computacional e automação em jogos.
+Projeto experimental que utiliza **YOLOv8** para detectar inimigos e mover o mouse suavemente em direção à cabeça do alvo.
 
 > ⚠️ Apenas para fins educativos. Uso em jogos online pode violar termos de serviço.
 
