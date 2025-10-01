@@ -40,7 +40,7 @@ class AimAssist:
         print("Aimbot Iniciado!")
 
     def calculate_head_position(self, x1, y1, x2, y2):
-        """Calcula a posição da cabeça baseada na bounding box"""
+        # Calcula a posição da cabeça baseada na bounding box
         bbox_height = y2 - y1
         head_region_height = bbox_height * self.head_offset_percentage
         center_x = (x1 + x2) / 2
@@ -48,7 +48,7 @@ class AimAssist:
         return (int(center_x), int(head_y))
 
     def exponential_smooth_move(self, current_pos, target_pos, factor):
-        """Movimento suave em direção ao alvo"""
+        # Movimento suave em direção ao alvo
         dx = target_pos[0] - current_pos[0]
         dy = target_pos[1] - current_pos[1]
         move_x = dx * factor
@@ -56,12 +56,12 @@ class AimAssist:
         return int(move_x), int(move_y)
 
     def move_mouse(self, dx, dy):
-        """Move o mouse usando win32api"""
+        # Move o mouse usando win32api
         if dx != 0 or dy != 0:
             win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, dx, dy, 0, 0)
 
     def get_closest_enemy_head(self, frame):
-        """Encontra a cabeça mais próxima do centro"""
+        # Encontra a cabeça mais próxima do centro
         try:
             # Reduz resolução para processamento mais rápido
             small_frame = cv2.resize(frame, (640, 480))
@@ -315,4 +315,5 @@ def main():
     dpg.destroy_context()
 
 if __name__ == "__main__":
+
     main()
