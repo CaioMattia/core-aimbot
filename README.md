@@ -13,3 +13,5 @@ Projeto experimental que utiliza **YOLOv8** para detectar inimigos e mover o mou
 - Configuração de sensibilidade e alcance de detecção.
 - Ativação/desativação via GUI ou hotkey (F2).
 - Interface simples e Intuitiva
+
+![Interface](https://i.ibb.co/mrJDFWKW/bot.png)
